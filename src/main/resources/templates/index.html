@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>MEDI-LAB</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    </head>
+    <body>
+      <!-- header section start -->
+      <div class="header_section">
+        <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/index}">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/about}">ACERCA DE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/doctor}">PERSONAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="logo_main" th:href="@{/index}"><img src="images/logo.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/depatments}">EXPERIENCIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/blog}">UBICACION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" th:href="@{/contact}">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" th:href="@{/login}">LOGIN</a>
+              </li>              
+            </ul>
+          </div>
+        </nav>
+        <nav class="mobile_header navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ACERCA DE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">PERSONAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="logo_main" href="index.html"><img src="images/logo.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">EXPERIENCIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">UBICACION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">LOGIN</a>
+              </li>              
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- header section end -->
+      <!-- banner section start -->
+      <div class="banner_section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 padding_0">
+              <div id="main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="banner_bg">
+                      <div class="banner_taital_main">
+                        <h1 class="banner_taital">MEDI-LAB<br>
+                        Examenes y diagnósticos
+                        <br>a un precio accesible</h1>
+                        <p class="long_text">MEDI-LAB realiza análisis para diagnosticar enfermedades e inconsistencias, utilizando tecnología avanzada y personal capacitado.</p>
+                        <div class="btn_main">
+                          <div class="about_us"><a href="#">ACERCA DE</a></div>
+                          <div class="about_bt"><a href="#">AGENDAR CITA</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="banner_bg">
+                      <div class="banner_taital_main">
+                        <h1 class="banner_taital">MEDI-LAB<br>
+                        Examenes y diagnósticos 
+                        <br>a un precio accesible</h1>
+                        <p class="long_text">MEDI-LAB realiza análisis para diagnosticar enfermedades e inconsistencias, utilizando tecnología avanzada y personal capacitado.</p>
+                        <div class="btn_main">
+                          <div class="about_us"><a href="#">ACERCA DE</a></div>
+                          <div class="about_bt"><a href="#">AGENDAR CITA</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="banner_bg">
+                      <div class="banner_taital_main">
+                        <h1 class="banner_taital">MEDI-LAB<br>
+                        Examenes y diagnósticos   
+                        <br>a un precio accesible</h1>
+                        <p class="long_text">MEDI-LAB realiza análisis para diagnosticar enfermedades e inconsistencias, utilizando tecnología avanzada y personal capacitado.</p>
+                        <div class="btn_main">
+                          <div class="about_us"><a href="#">ACERCA DE</a></div>
+                          <div class="about_bt"><a href="#">AGENDAR CITA</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i></a>
+                <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 padding_0">
+              <div class="banner_img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="about_taital">
+                <h4 class="about_text">ACERCA DE</h4>
+                <h1 class="highest_text">Conoce mas de nosotros</h1>
+                <p class="lorem_text">
+En Medi-Lab, nos dedicamos a ofrecer servicios de laboratorio clínico de alta calidad, respaldados por tecnología avanzada y un equipo de profesionales comprometidos con tu bienestar. Nuestra misión es proporcionar resultados precisos y oportunos para apoyar tu salud y el cuidado médico. Con un enfoque centrado en el paciente y estándares de calidad rigurosos, en Medi-Lab trabajamos incansablemente para brindar la excelencia en cada prueba, garantizando la tranquilidad de nuestros clientes. Descubre el compromiso de Medi-Lab con la precisión y la atención centrada en ti.</p>
+                <div class="read_bt"><a href="#">LEER MAS</a></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image_2" href="#"><img src="images/img-2.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about section end -->
+      <!-- care section start -->
+      <div class="care_section layout_padding">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image_3" href="#"><img src="images/img-3.png"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="care_taital">
+                <h4 class="finest_text">Tiempo de Trayectoria</h4>
+                <h1 class="care_text">Nuestra Experiencia</h1>
+                <p class="ipsum_text">Desde hace 5 años, los doctores de MEDI-LAB realizan pruebas médicas, colaboran estrechamente y mantienen altos estándares de precisión. Su trabajo incluye la interpretación de resultados y la interacción con profesionales de la salud, requiriendo actualización constante y ética rigurosa en el manejo de información médica.</p>
+                <div class="read_bt_2"><a href="#">LEER MAS</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- care section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="call_box">
+                <div class="call_image"><img src="images/call-icon.png"></div>
+                <h2 class="emergency_text">¿DONDE ESTAMOS UBICADOS?</h2>
+                <h1 class="call_text">CARRERA 10 #9-89</h1>
+                <p class="dolor_text">Ubicados en Bucaramanga, Santander, Colombia</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="call_box active">
+                <div class="call_image"><img src="images/time-seat-icon.png"></div>
+                <h2 class="emergency_text">AGENDAR CITAS</h2>
+                <h1 class="call_text">LLAMAR AL +57 311 898 1894</h1>
+                <p class="dolor_text">El horario de atención es de las 9:00 AM hasta las 6:00 PM de Lunes a Viernes</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="call_box">
+                <div class="call_image"><img src="images/watch-icon.png"></div>
+                <h2 class="emergency_text">HORARIO ATENCIÓN</h2>
+                <h1 class="call_text">6:00 AM A 8:00 PM</h1>
+                <p class="dolor_text">Jornada continua, llegar 30min antes si tiene cita agendada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- services section end -->
+      <!-- doctor section start -->
+      <div class="doctor_section layout_padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 padding_top0">
+              <h4 class="about_text">Nuestro Personal</h4>
+                <h1 class="highest_text">Capacitado</h1>
+                <p class="lorem_text">El personal de MEDI-LAB, desempeña roles clave para garantizar resultados precisos. Técnicos y tecnólogos realizan pruebas, especialistas en áreas como bioquímica y microbiología y el personal administrativo y de calidad asegura eficiencia y cumplimiento de estándares. La ardua colaboracion en MEDI-LAB, hace posible los diagnóstico y trabajos realizados.</p>
+                <div class="read_main">
+                  <div class="read_bt"><a href="#">LEER MAS</a></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image_4"><img src="images/img-4.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- doctor section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="contact_text">CONTACTO</h1>
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Nombres" name="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Apellidos" name="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Cedula" name="Email">
+                  </div>
+                    <div class="form-group">
+                      <textarea class="massage-bt" placeholder="Tipo de examen" rows="5" id="comment" name="text"></textarea>
+                    </div>
+                  </form>
+                  <div class="main_bt"><a href="#">ENVIAR</a></div>
+              </div>
+            <div class="col-md-6">
+              <h1 class="contact_text">Experiencia de Usuario</h1>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <h2 class="selfideno_text">Juan Diego</h2>
+                    <div class="client_main">
+                      <div class="image_5"><img src="images/img-5.png"></div>
+                      <p class="lorem_ipsum_text">El personal fue amable y profesional, la espera breve, y la toma de muestras se realizó con cuidado. El proceso fue claro, el lugar estaba impecable, y la tecnología utilizada era avanzada. Los resultados llegaron a tiempo, y el equipo estuvo disponible para responder preguntas incluso después de la visita. Fue una experiencia eficiente y reconfortante, gracias al enfoque centrado en el paciente del personal.</p>
+                      <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <h2 class="selfideno_text">Juan Diego</h2>
+                    <div class="client_main">
+                      <div class="image_5"><img src="images/img-5.png"></div>
+                      <p class="lorem_ipsum_text">El personal fue amable y profesional, la espera breve, y la toma de muestras se realizó con cuidado. El proceso fue claro, el lugar estaba impecable, y la tecnología utilizada era avanzada. Los resultados llegaron a tiempo, y el equipo estuvo disponible para responder preguntas incluso después de la visita. Fue una experiencia eficiente y reconfortante, gracias al enfoque centrado en el paciente del personal.</p>
+                      <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact section end -->
+      <!-- appointment section start -->
+      <div class="appointment_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="need_text">¿Necesitas realizarte un examen?</h3>
+              <h1 class="make_text">Contactanos y te informamos</h1>
+            </div>
+            <div class="col-md-6">
+              <div class="appointment_bt_main">
+                <div class="appointment_bt"><a href="#">AGENDAR CITA</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- appointment section end -->
+      <!-- footer section start -->
+      <!-- info section -->
+    <div class="info_section layout_padding">
+      <div class="container ">
+        <div class="info_content">
+              <div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Informacion
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Acerca de
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Servicios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Personal
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Servicios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contacto
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      	Hematologia
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Bioquimica
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Diagnostico & Resultados
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Medicinas
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5>
+                  Servicios
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Acerca de
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Servicios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Personal
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Servicios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contacto
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Hematologia
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Bioquimica
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Diagnostico & Resultados
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Medicinas
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex">
+                <h5></h5>
+                  Personal
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      Acerca de
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Nuestros servicios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      A
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Contacto
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Hematologia
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Bioquimica
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Diagnostico & Resultados
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Medicinas
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+          <div class="social-box">
+            <a href="">
+              <img src="images/fb-icon.png" alt="" />
+            </a>
+
+            <a href="">
+              <img src="images/twitter-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/linkedin-icon.png" alt="" />
+            </a>
+            <a href="">
+              <img src="images/instagram-icon.png" alt="" />
+            </a>
+          </div>
+          <div class="form_container mt-5">
+            <form action="">
+              <label for="subscribeMail">
+                Newsletter
+              </label>
+              <input
+                type="email"
+                placeholder="Enter Your email"
+                id="subscribeMail"
+              />
+              <button type="submit">
+                Suscribete
+              </button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- end info section -->
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <p class="copyright">(C) 2023</a></p>
+      </div>
+    </div>
+    <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+   </html>

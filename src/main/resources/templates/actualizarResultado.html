@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Formulario equipo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{/css/team_form.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+<main>
+    <div class="return">
+        <a th:href="@{/paciente/}">Atras</a>
+    </div>
+    <div class="cont">
+        <form th:action="@{/paciente/save}" th:object="${paciente}" method="post">
+            <input type="hidden" th:field="*{id}">
+            <div class="name">
+                <input type="hidden" id="name" th:field="*{nombres}">
+            </div>
+            <div class="name">
+                
+                <input type="hidden" id="name" th:field="*{apellidos}">
+            </div>
+            <div class="name">
+                
+                <input type="hidden" id="name" th:field="*{identificacion}">
+            </div>
+            <div class="name">
+                
+                <input type="hidden" id="name" th:field="*{sexo}">
+            </div>
+            <div class="name">
+                
+                <input type="hidden" id="name" th:field="*{telefono}">
+            </div>
+            <div class="name">
+
+                <input type="hidden" id="name" th:field="*{gmail}">
+            </div>
+            <div class="name">
+                <label for="name">Hemoglonina: </label>
+                <input type="text" class="form-control" id="hemogloninaHB" th:field="*{hemogloninaHB}">
+            </div>
+            <div class="name">
+                <label for="name">Hematocrito: </label>
+                <input type="text" class="form-control" id="hematocritoHct" th:field="*{hematocritoHct}">
+            </div>
+            <div class="name">
+                <label for="name">Globulos Blancos: </label>
+                <input type="text" class="form-control" id="globulosBlancos" th:field="*{globulosBlancos}">
+            </div>
+            <div class="name">
+                <label for="name">Plaquetas: </label>
+                <input type="text" class="form-control" id="plaquetasPlt" th:field="*{plaquetasPlt}">
+            </div>
+            <div class="name">
+                <label for="name">Formula leucocitaria: </label>
+                <input type="text" class="form-control" id="formulaleucocitariaodiferencial" th:field="*{formulaleucocitariaodiferencial}">
+            </div>
+            <div class="name">
+                <label for="name">Vel. sed. glob.: </label>
+                <input type="text" class="form-control" id="velocidadsedimentacionglobularVSG" th:field="*{velocidadsedimentacionglobularVSG}">
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <div class="button">
+                <button type="submit">Agregar Resultados</button>
+            </div>
+        </form>
+    </div>
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js}" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Listado</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{/css/team_table.css}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="cont_header">
+            <div class="logo">
+                <a th:href="@{/}">
+                    <img th:src="@{/images/logo.png}" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cont">
+            <div class="cont_main">
+                <a th:href="@{/paciente/new}" class="btn btn-success">
+                    Nuevo Paciente
+                </a>
+                <table class="table table-striped m-3 tab">
+                    <thead>
+                        <tr class="">
+                            <td><strong>Id</strong></td>
+                            <td><strong>Nombre</strong></td>
+                            <td><strong>Apellido</strong></td>
+                            <td><strong>Identificacion</strong></td>
+                            <td><strong>Sexo</strong></td>
+                            <td><strong>Telefono</strong></td>
+                            <td><strong>Correo</strong></td>
+                            <td><strong>Editar</strong></td>
+                            <td><strong>Eliminar</strong></td>
+                        </tr>
+                    </thead>
+                    <tbody class="">
+                        <tr th:each="paciente : ${paciente}">
+                            <td>[[ ${paciente.id} ]]</td>
+                            <td>[[ ${paciente.nombres} ]]</td>
+                            <td>[[ ${paciente.apellidos} ]]</td>
+                            <td>[[ ${paciente.identificacion} ]]</td>
+                            <td>[[ ${paciente.sexo} ]]</td>
+                            <td>[[ ${paciente.telefono} ]]</td>
+                            <td>[[ ${paciente.gmail} ]]</td>
+
+                            <td>
+                                <a class="btn btn-primary mx-3" th:href="@{/paciente/edit/{id}(id = ${paciente.id})}">
+                                    Editar
+                                </a>
+                            </td>
+                            <td>
+                                <a class="btn btn-danger mx-3" th:href="@{/paciente/delete/{id}(id = ${paciente.id})}">
+                                    Eliminar
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js}" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
+

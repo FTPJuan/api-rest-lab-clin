@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Listado</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" th:href="@{/css/team_table.css}">
+<link rel="stylesheet" th:href="@{/css/styles.css}">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	th:href="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css}"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="cont_header">
+			<div class="logo">
+				<a th:href="@{/}"> <img th:src="@{/images/logo.png}" alt="">
+				</a>
+			</div>
+			
+		</div>
+	</header>
+	<main class="pt-5 ">
+		<div class="cont pt-5 container text-center ">
+			<div class=" cont_main pt-0 mt-0">
+				<div class="fondo pt-4 mt-3 border border-info border-3 shadow-lg bg-white rounded">
+				
+					<div class="row row-cols-1 row-cols-lg-5 g-0 g-lg-3 ">
+						<div class="col logo"><img class="v1 rounded" th:src="@{/img/icon.png}" width="75"></div>
+					</div>
+					
+					
+					
+
+					<div class="row row-cols-1 row-cols-lg-5 g-0 g-lg-3">
+						<div class="col">
+							<div class="p-3">
+								<strong>Hemoglonina:</strong>
+							</div>
+						</div>
+						<div th:each="paciente : ${paciente}" class="col">
+							<div class="p-3">[[ ${paciente.hemogloninaHB} ]]</div>
+						</div>
+
+					</div>
+
+					
+
+					<div class="row row-cols-1 row-cols-lg-5 g-0 g-lg-3">
+						<div class="col">
+							<div class="p-3">
+								<strong>Hematocrito:</strong>
+							</div>
+						</div>
+						<div th:each="paciente : ${paciente}" class="col">
+							<div class="p-3">[[ ${paciente.hematocritoHct}
+								]]</div>
+						</div>
+
+					</div>
+					
+					
+					
+					<!-- RazonamientoCuantitativo -->
+					
+					
+					<div class="row row-cols-1 row-cols-lg-5 g-0 g-lg-3">
+						<div class="col">
+							<div class="p-3">
+								<strong>Globulos Blancos:</strong>
+							</div>
+						</div>
+						<div th:each="paciente : ${paciente}" class="col">
+							<div class="p-3">[[ ${paciente.globulosBlancos} ]]</div>
+						</div>
+
+					</div>
+
+					
+
+					<div class="row row-cols-1 row-cols-lg-5 g-0 g-lg-3">
+						<div class="col">
+							<div class="p-3">
+								<strong>Plaquetas:</strong>
+							</div>
+						</div>
+						<div th:each="paciente : ${paciente}" class="col">
+							<div class="p-3">[[ ${paciente.plaquetasPlt}
+								]]</div>
+						</div>
+
+					</div>
+					
+					
+					
+					<!-- LecturaCritica -->
+					
+					
+					
+					<div class="row row-cols-1 row-cols-lg-5 g-0 g-lg-3">
+						<div class="col">
+							<div class="p-3">
+								<strong>formula leucocitaria:</strong>
+							</div>
+						</div>
+						<div th:each="paciente : ${paciente}" class="col">
+							<div class="p-3">[[ ${paciente.formulaleucocitariaodiferencial} ]]</div>
+						</div>
+
+					</div>
+
+					
+
+					<div class="row row-cols-1 row-cols-lg-5 g-0 g-lg-3 pb-2 mb-2">
+						<div class="col">
+							<div class="p-3">
+								<strong>vel. sed. lob.:</strong>
+							</div>
+						</div>
+						<div th:each="paciente : ${paciente}" class="col">
+							<div class="p-3">[[ ${paciente.velocidadsedimentacionglobularVSG}
+								]]</div>
+						</div>
+
+					</div>
+				
+				</div>
+				
+					
+			</div>
+		</div>
+	</main>
+	<div class="hid" ></div>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script th:src="@{https://code.jquery.com/jquery-3.3.1.slim.min.js}"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous">
+		
+	</script>
+	<script
+		th:src="@{https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js}"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous">
+		
+	</script>
+	<script
+		th:src="@{https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js}"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous">
+		
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" th:href="@{/css/styles.css}">
+<link rel="stylesheet" th:href="@{/css/styleLogin.css}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand&display=swap"
+	rel="stylesheet">
+<title>Login</title>
+</head>
+<body>
+	<section class="d-flex flex-column pt-4 mb-1 pb-1" id="n0">
+		<div class="d-flex justify-content-center pt-4" id="img">
+			<img class="v1" src="images/logo.png" width="100">
+		</div>
+	</section>
+	<section class="d-flex justify-content-center" id="n1">
+		<div class="" style="width: 540px;">
+			<h3 class="p-2 border rounded fs-6 text-center">LABORATORIO CLÍNICO MEDI-LAB</h3>
+		</div>
+	</section>
+	<main class="d-flex justify-content-center" id="n2">
+
+		<form th:action="@{/loginPaciente}" class="bg-white formulario border border-info border-3 shadow-lg p-3 mb-5 bg-body rounded" method="post">
+			<div class="form-group">
+				<p for="exampleInputEmail1"  class="text-center"><b>Identificacion:</b></p> <input type="text"
+					class="form-control" name="identificacion">
+			</div>
+			
+
+			
+			<div class="d-flex flex-column">
+				<input class="btn btn-primary" type="submit"  value="login">
+			</div>
+		</form>
+
+	</main>
+</body>
+
+</html>
